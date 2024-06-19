@@ -41,4 +41,24 @@ public class Bootcamp {
     public LocalDate getDataFinal() {
         return dataFinal;
     }
+
+    public Set<Dev> getDevsInscritos() {
+        return devsInscritos;
+    }
+
+    public void inscreverDev(Dev dev) {
+        devsInscritos.add(dev);
+    }
+
+    public void removerDev(Dev dev) {
+        devsInscritos.remove(dev);
+    }
+
+    public Set<Conteudo> getConteudos() {
+        return conteudos;
+    }
+
+    public void adicionarConteudo(Conteudo conteudo) {
+        conteudos.add(conteudo);
+    }
 }
